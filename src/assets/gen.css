@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+/*@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap');*/
+/*@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,700,700i&display=swap');*/
+
+/*html  { font-size: 14px }*/
+
+body
+{
+	background-color: #eef2f4;
+/*	color: #535c69;*/
+	font-family: Lato, Helvetica, Arial, sans-serif;
+}
+
+body.login
+{
+	background: url(../images/bg-login.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+body.login .card  { background-color: #fffe; }
+
+/* Imágenes */
+
+img.avatar
+{
+	width: 32px;
+	height: 32px;
+}
+
+img.avatar-menu
+{
+	width: 128px;
+	height: 128px;
+}
+
+/* Formularios */
+
+.campo-obligatorio:after
+{
+	color: #dc3545;
+	content: ' *';
+}
+
+/* Preloader */
+/* https://devcode.la/tutoriales/crear-un-preloader-con-css3/ */
+
+.preloader-wrapper
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1100;
+	background-color: #fff;
+}
+
+.preloader
+{
+	display: block;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	margin: -36px 0 0 -36px;
+	z-index: 150;
+	/**/
+	width: 72px;
+	height: 72px;
+	border: 10px solid #eee;
+	border-top: 10px solid #666;
+	border-radius: 50%;
+	animation-name: girar;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes girar
+{
+	from  { transform: rotate(0deg) }
+	to  { transform: rotate(360deg) }
+}
+
+/* Mapas */
+
+.mapa iframe  { width: 100% }
+
+/* ActionBar */
+
+#actionbar
+{
+	background-color: #3c8dbc;
+}
+
+/**********************/
+/* Librerías externas */
+/**********************/
+
+/* Bootstrap */
+
+/*h5, .h5
+{
+	color: #212529;
+}*/
+
+.navbar-brand
+{
+	font-weight: bold;
+}
+
+/*.table
+{
+	color: #535c69;
+}*/
+
+/* DataTables */
+
+@media (max-width: 575px)
+{
+	.dataTables_info
+	{
+		display: none;
+	}
+}
