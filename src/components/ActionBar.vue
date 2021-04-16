@@ -3,7 +3,7 @@
 	<div class="w-100">
 		<div class="form-row">
 		<div class="col navbar-brand text-truncate">
-			<a class="navbar-text py-0 mr-2 text-decoration-none text-white" href="#sidebar">{{ title }}</a>
+			<router-link class="navbar-text py-0 mr-2 text-decoration-none text-white font-weight-bold" to="/">{{ title }}</router-link>
 		</div>
 		<div class="col-auto" role="toolbar" aria-label="Barra de herramientas">
 			<router-link class="btn text-white" to="login">Entra</router-link>

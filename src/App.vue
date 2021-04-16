@@ -12,7 +12,7 @@
 	</head>
 	<body>
 	<div id="app">
-		<ActionBar title="Hackathon 2"></ActionBar>
+		<ActionBar title="Apprende.pe"></ActionBar>
 		<main>
 			<router-view></router-view>
 		</main>
@@ -48,4 +48,8 @@ export default {
 	color: #2c3e50;
 	margin-top: 60px;
 }*/
+body
+{
+  background-color: #eef2f4 !important;
+}
 </style>

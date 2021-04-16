@@ -1,5 +1,6 @@
 <template>
 	<div class="container-fluid">
+		<h1 class="h3">Lista de cursos</h1>
 		<CourseList></CourseList>
 	</div>
 </template>
@@ -8,7 +9,7 @@
 import CourseList from "@/components/CourseList";
 export default {
   name: "CoursesLayout",
-  components: {CourseList}
+  components: {CourseList},
 }
 </script>
 

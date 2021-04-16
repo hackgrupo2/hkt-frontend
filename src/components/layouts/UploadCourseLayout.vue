@@ -3,16 +3,19 @@
 		<form method="post" action="" id="form-upload-course">
 			<div class="form-group">
 				<label for="name">Título</label>
-				<input class="form-control" type="text" name="name" id="name" />
+				<input class="form-control" type="text" name="name" id="name" required="required" />
 			</div>
 			<div class="form-group">
 				<label for="description">Descripción</label>
-				<input class="form-control" type="text" name="description" id="description" />
+				<input class="form-control" type="text" name="description" id="description" required="required" />
 			</div>
 			<div class="form-group">
 				<label for="category">Categoría</label>
-				<select class="form-control" name="category" id="category">
+				<select class="form-control" name="category" id="category" required="required">
 					<option value="">Selecciona una categoría &rarr;</option>
+					<option value="1">Niños</option>
+					<option value="2">Escolar</option>
+					<option value="3">Financiero</option>
 				</select>
 			</div>
 			<div class="form-group">
@@ -24,9 +27,7 @@
 				<input class="form-control" type="text" name="tags" id="tags" />
 			</div>
 			<div class="text-right">
-				<button class="btn btn-success" type="submit">
-					<span class="fas fa-check"></span> Publicar
-				</button>
+				<SubmitButton font-awesome-class="fas fa-upload" button-label="Publicar"></SubmitButton>
 				<GoToIndexButton></GoToIndexButton>
 			</div>
 		</form>
@@ -35,9 +36,10 @@
 
 <script>
 import GoToIndexButton from "@/components/GoToIndexButton";
+import SubmitButton from "@/components/SubmitButton";
 export default {
   name: "UploadCourseLayout",
-  components: {GoToIndexButton}
+  components: {SubmitButton, GoToIndexButton}
 }
 </script>
 
