@@ -1,21 +1,23 @@
 <template>
 	<div class="form-row">
-		<div class="col-sm">
+		<h2 class="h5 text-center"><small class="text-uppercase font-weight-bold">Desarrollo web</small></h2>
+		<div class="col-sm mb-2">
 			<div class="form-row">
-				<div class="col-md mb-3">
+				<div class="col-md mb-1">
 					<CourseItem name="PHP" description="Aprende PHP desde cero" image="assets/logo.png"></CourseItem>
 				</div>
-				<div class="col-md mb-3">
+				<div class="col-md mb-1">
 					<CourseItem name="Java" description="Aprende Java desde cero" image="assets/logo.png"></CourseItem>
 				</div>
 			</div>
 		</div>
-		<div class="col-sm">
+		<h2 class="h5 text-center"><small class="text-uppercase font-weight-bold">Bases de datos</small></h2>
+		<div class="col-sm mb-2">
 			<div class="form-row">
-				<div class="col-md mb-3">
+				<div class="col-md mb-1">
 					<CourseItem name="Marketing digital" description="Aprende Marketing digital desde cero" image="assets/logo.png"></CourseItem>
 				</div>
-				<div class="col-md mb-3">
+				<div class="col-md mb-1">
 					<CourseItem name="Finanzas personales" description="Aprende Finanzas personales desde cero" image="assets/logo.png"></CourseItem>
 				</div>
 			</div>

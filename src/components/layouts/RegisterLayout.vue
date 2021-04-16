@@ -18,8 +18,25 @@
 				<label for="password2" class="sr-only">Repite tu contraseña</label>
 				<input class="form-control" type="password" id="password2" name="password2" placeholder="Repite tu contraseña" required="required" />
 			</div>
+			<div class="form-group">
+				Selecciona tus categorías:
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+					<label class="form-check-label" for="defaultCheck1"> Desarrollo web</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+					<label class="form-check-label" for="defaultCheck2"> Bases de datos</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+					<label class="form-check-label" for="defaultCheck3"> Ofimática</label>
+				</div>
+			</div>
 			<div class="text-right">
-				<SubmitButton font-awesome-class="fas fa-check" button-label="Ingresar"></SubmitButton>
+				<router-link class="btn btn-success mr-1" to="/courses">
+					<span class="fas fa-check"></span> Registrarte
+				</router-link>
 				<GoToIndexButton></GoToIndexButton>
 			</div>
 		</form>
